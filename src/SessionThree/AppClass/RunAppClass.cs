@@ -4,9 +4,11 @@ namespace DotNetCourse.src.SessionThree.AppClass;
 using DotNetCourse.src.SessionThree.AppClass;
 using System;
 
-public static class RunAppClass {
-    public static void RunAnimal() {
-        Animal dog = new Animal (name: "Golden", species: "Nice", age: 5);
+public static class RunAppClass
+{
+    public static void RunAnimal()
+    {
+        Animal dog = new Animal(name: "Golden", species: "Nice", age: 5);
         Console.WriteLine($"Dog was {dog.Age} years old");
         dog.Age = 10;
         Console.WriteLine($"Dog is {dog.Age} years old after update\n");
@@ -14,23 +16,25 @@ public static class RunAppClass {
         dog.MakeSound();
         dog.MakeSound(animalName: "Labrador");
     }
-        public static void RunMusic(){
-            Music nepali = new Music();
-            Music english = new();
+    
+    public static void RunMusic()
+    {
+        Music nepali = new Music();
+        Music english = new();
 
-            nepali.Artist = "Laure";
-            nepali.Genre = "Hiphop";
-            nepali.Title = "Mero Solta";
+        nepali.Artist = "Laure";
+        nepali.Genre = "Hiphop";
+        nepali.Title = "Mero Solta";
 
-            nepali.ShowInfo();
-            // Add spacing between outputs for better readability
-            Console.WriteLine();
-            english.ShowInfo();
-        }
+        nepali.ShowInfo();
+        // Add spacing between outputs for better readability
+        Console.WriteLine();
+        english.ShowInfo();
+    }
 
     public static void RunStudentIndexer()
     {
-        StudentIndexer kct = new (5);
+        StudentIndexer kct = new(5);
 
         kct[0] = "One";
         kct[1] = "Two";
@@ -38,7 +42,8 @@ public static class RunAppClass {
         kct[3] = "Four";
         kct[4] = "Five";
 
-        for (int i = 0; i < kct.NameList.Length; i++) {
+        for (int i = 0; i < kct.NameList.Length; i++)
+        {
             Console.WriteLine(kct[i]);
         }
     }
